@@ -189,13 +189,16 @@ added without rewriting existing code.
 
 ## How to Run the Project
 
-1. Install dependencies:
-```bash
-pip install pandas numpy openpyxl pytest
+## How to Run the Project
 
-2. Prepara the Input Data
-The expected relative path to the input file is:
+1. Install dependencies:
+
+   ```bash
+   pip install pandas numpy openpyxl pytest
+Prepare the input data:
+
+2. The expected relative path to the input file is:
 data/livestock_data.xlsx
 
-3. Run the Main Analysis
+3. Run the main analysis:
 python -m livestock_project.project
