@@ -1,4 +1,41 @@
 # python_final_project
+## Project Structure
+
+The project is organised as a Python package with a clear separation of concerns:
+
+python_final_project/
+│
+├── livestock_project/
+│   ├── __init__.py
+│   └── project.py          # Main analytical pipeline
+│
+├── functions/
+│   ├── __init__.py
+│   └── data_validation.py  # Data loading and validation
+│
+├── tests/
+│   ├── __init__.py
+│   └── test_project.py     # Unit tests (pytest)
+│
+├── data/
+│   └── livestock_data.xlsx # Input dataset (not versioned)
+│
+└── results_report.xlsx     # Generated output (after execution)
+
+This structure ensures modularity, testability, and reproducibility.
+
+## Data Directory
+
+The `data/` directory is expected to contain the input dataset
+`livestock_data.xlsx`.
+
+This directory is intentionally not fully versioned in the GitHub repository,
+following good data management practices. Input data may be large or sensitive,
+and therefore only the expected structure is documented.
+
+Users must place the required Excel file in the `data/` directory before
+executing the project.
+
 # Livestock Sustainability Analysis
 
 This project was developed as part of an academic assignment focused on
@@ -155,3 +192,10 @@ added without rewriting existing code.
 1. Install dependencies:
 ```bash
 pip install pandas numpy openpyxl pytest
+
+2. Prepara the Input Data
+The expected relative path to the input file is:
+data/livestock_data.xlsx
+
+3. Run the Main Analysis
+python -m livestock_project.project
