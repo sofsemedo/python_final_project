@@ -2,13 +2,12 @@ import pandas as pd
 import numpy as np
 import pytest
 
-from project import (
+from livestock_project.project import (
     calculate_herd_structure,
     calculate_productivity_metrics,
     evaluate_sustainability,
     Herd
 )
-
 
 # -----------------------------
 # Fixtures
